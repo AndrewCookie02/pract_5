@@ -11,7 +11,13 @@
 
 @import "config/main" ;
 
+@import "config/menu";
 
+@import "config/prov";
+
+@import "config/footer" ;
+
+@import "config/mediaquery" ;
 
 li{
     list-style: none;

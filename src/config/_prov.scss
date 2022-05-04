@@ -1,0 +1,34 @@
+.proveedores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proveedores > div{
+    @include margin (0px, 0px, 0px, 50px);
+    display: grid; 
+    grid-template-areas: "h2 h2"
+                        "img p" ;
+    width: 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    justify-items: center;
+    border: solid $dark;
+    background-color: $myBgColorLight;
+
+    h2{
+        grid-area: h2;
+        
+    }
+    figure{
+        grid-area: img;
+       
+        img{
+            width: 95%;
+        }
+    }
+    div{
+        grid-area: p;
+        
+    }
+}

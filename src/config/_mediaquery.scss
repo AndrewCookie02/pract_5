@@ -1,0 +1,90 @@
+//menu
+@media all and (max-width:660px){
+    .menu > section{
+        display: grid; 
+        grid-template-areas: "h2 h2"
+                            "ul ul"
+                            "img img" ;
+        width: 60% ;
+        height: 10%;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 30% 60%;
+        justify-items: center;
+        @include margin (0px, 0px, 0px, 30px);
+    
+    
+        h2{
+            grid-area: h2;
+        }
+        div{
+            grid-area: ul;
+        }
+        figure{
+            grid-area: img;
+            img{
+                width:80%;
+                @include paddings (60px, 0px,0px, 0px);
+            }
+        }
+    }
+}
+
+//proveedores
+
+@media all and (max-width:660px){
+    .proveedores > div{
+        @include margin (0px, 0px, 0px, 50px);
+        display: grid; 
+        grid-template-areas: "h2 h2"
+                            "img img"
+                             "p p" ;
+        width: 60%;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 65% 20%;
+        justify-items: center;
+        border: solid $dark;
+        background-color: $myBgColorLight;
+    
+    
+        h2{
+            grid-area: h2;
+            
+        }
+        figure{
+            grid-area: img;
+           
+            img{
+                width:80%;
+                @include paddings (60px, 0px,0px, 0px);
+            }
+        }
+        div{
+            grid-area: p;
+            @include paddings (60px, 0px,0px, 0px);
+        }
+    }
+}
+
+//footer
+@media all and (max-width:660px){
+    
+    footer section{
+        display: grid;
+        grid-template-areas: "secc1 secc1"
+                            "secc2 secc2";
+        grid-template-columns: 40%;
+        grid-template-rows: 50% 50%;
+        width: 90% ;
+        gap:10px;
+        @include paddings (1%, 1%, 0%, 2%);
+        
+        div:nth-child(1){
+            grid-area: secc1;
+            
+           
+        }
+        div:nth-child(2){
+            grid-area: secc2;
+        }
+    }
+}

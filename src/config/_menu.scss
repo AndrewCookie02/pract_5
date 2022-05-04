@@ -1,0 +1,40 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        background-color: $myBgColorLight2;
+        color: $light;
+        border-radius: $borderrad;
+        transition: all ease-in-out 1s;
+        @include paddings (10px, 10px,10px, 10px);
+        @include margin (0px, 0px, 0px, 30px);
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+}
+.menu > section{
+    display: grid; 
+    grid-template-areas: "h2 h2"
+                        "ul img" ;
+    width: 60% ;
+    height: 10%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 16% 84%;
+    justify-items: center;
+
+
+    h2{
+        grid-area: h2;
+    }
+    div{
+        grid-area: ul;
+    }
+    figure{
+        grid-area: img;
+        img{
+            width:70%;
+        }
+    }
+}
