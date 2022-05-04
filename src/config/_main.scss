@@ -5,8 +5,20 @@
 .nutricion{
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    .btn {
+        &:hover{
+            background-color:$light;
+        }
+    a{
+        color:$light;
+        &:hover{
+            color: $primary;
+        } 
+    }
+    }
 }
+
 .nutricion > div:nth-child(1){
     @include margin (0%, 1%, 0px, 0px);
 }
@@ -20,6 +32,8 @@
         align-items: center;
         &:hover{
             background-color: $myBgColorLight2;
+            color: $light;
         }
     }
+    
 }
