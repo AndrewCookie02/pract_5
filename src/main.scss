@@ -1,9 +1,29 @@
 //agregar las variables del proyecto
-
+@import "shared/variables";
 
 // personalizar boostrap
+@import "shared/mybootstrap";
 
 
+@import "shared/mixin" ;
+
+@import "config/header" ;
+
+@import "config/main" ;
+
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(252, 242, 229);
+}
 
 
 

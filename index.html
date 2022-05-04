@@ -28,14 +28,14 @@
 
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
 
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Healthy and Natural meal</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-
           </button>
+          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -45,26 +45,30 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Men&uacute; </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Comidas</a></li>
+                  <li><a class="dropdown-item" href="#comida">Comidas</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Bebidas</a></li>
+                  <li><a class="dropdown-item" href="#">A la parrilla</a></li>
+                  <li><a class="dropdown-item" href="#">Al horno</a></li>
+                  <li><a class="dropdown-item" href="#">Ensaladas frescas</a></li>
+                  <li><a class="dropdown-item" href="#">Comida Orgánica</a></li>
+                  <li><a class="dropdown-item" href="#">Dieta Cetogénica</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contactos">Contacto</a>
               </li>
             </ul>
+
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+
           </div>
         </div>
-      </nav>
+    </nav>
 
-<main>
-
-    <section>
+    <header>
         <div class="card">
             <div class="card-header">
                <h2>Healthy and Natural meal</h2>
@@ -74,207 +78,282 @@
                 <p>La salud es la mayor posesión.</p>
               </blockquote>
             </div>
-          </div>
-
-        <h1>¿Por qué es importante incorporar alimentos orgánicos en la dieta?</h1>
-        <p>Libres de hormonas, antibióticos, colorantes y saborizantes artificiales. Además de ofrecer productos que traen beneficios para la salud al ser humano, colabora con detener significativamente daños al medio ambiente y a la tierra de cultivo.</p>
-    </section>
-
-    <section>
-        <div id="carouselExampleInterval" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
-
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="public/img/a la parrilla.jpg" class="d-block w-80 img-fluid" alt="...">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="public/img/al horno.jpg" class="d-block w-80 img-fluid" alt="...">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="public/img/comida organica.jpg" class="d-block w-80 img-fluid" alt="...">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="4000">
-                    <img src="public/img/dieta cetogenica.jpg" class="d-block w-80 img-fluid" alt="...">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="public/img/ensalada fresca.jpg" class="d-block w-80 img-fluid" alt="..."> 
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </section>
+
+        <div class="col-lg-10 col-md-6 sm-12">
+            <h1>¿Por qué es importante incorporar alimentos orgánicos en la dieta?</h1>
+            <p>Libres de hormonas, antibióticos, colorantes y saborizantes artificiales. Además de ofrecer productos que traen beneficios para la salud al ser humano, colabora con detener significativamente daños al medio ambiente y a la tierra de cultivo.</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="carruselmenu">
+            <div id="carouselExampleInterval" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="public/img/a la parrilla.jpg" class="d-block w-80 img-fluid" alt="...">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="public/img/al horno.jpg" class="d-block w-80 img-fluid" alt="...">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="public/img/comida organica.jpg" class="d-block w-80 img-fluid" alt="...">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="public/img/dieta cetogenica.jpg" class="d-block w-80 img-fluid" alt="...">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="public/img/ensalada fresca.jpg" class="d-block w-80 img-fluid" alt="..."> 
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
     
-    <section class="d-flex flex-row bd-highlight mb-3">
+        <section class="d-flex flex-row bd-highlight mb-3 nutricion">
+            <div id="visualizamenu">
+                <button type="button" class="btn btn-primary btn-lg"><a href="#comida">Visualiza nuestro menu</a></button>
+            </div>
+            
+            <div class="card mb-3 col-lg-12" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="public/img/nutricionista.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="card-body ">
+                            <p class="card-text">M&aacute;s informaci&oacute;n con un nutricionista de confianza</p>
+                            <a href="#" class="btn btn-primary">Contacta aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row buenasalud">
+            <h2>Mantener un estilo de vida saludable</h2>
+            <div class="card mb-3 col-lg-12" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="public/img/almidon.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="card-body ">
+                            <p class="card-text">Alimentos con almidón, incluidos el pan, las pastas, el arroz y las papas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card mb-3 col-lg-12" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="public/img/FrutasYVerduras.png" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="card-body ">
+                        <p class="card-text">Frutas y verduras</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 col-lg-12" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="public/img/productos-lacteos.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="card-body ">
+                        <p class="card-text">Leche y otros productos lácteos</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 col-lg-12" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="public/img/carne-huevos-etc.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="card-body ">
+                        <p class="card-text">Carne, pescado, huevos, frijoles y otras fuentes no lácteas de proteínas</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 col-lg-12" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="public/img/azucar.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="card-body ">
+                        <p class="card-text">Contenido de grasa o azúcar</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="comida" class="menu">
+                <div>
+                    <h2>A la parrilla</h2>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor -----$20</li>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                            <li>Lorem, ipsum dolor -----$40</li>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="public/img/a la parrilla 2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Al horno</h2>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                            <li>Lorem, ipsum dolor -----$40</li>
+                            <li>Lorem, ipsum dolor -----$20</li>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="public/img/al horno 2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Ensaladas frescas</h2>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor -----$40</li>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                            <li>Lorem, ipsum dolor -----$20</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="public/img/ensalada fresca 2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Comida Orgánica</h2>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor -----$20</li>
+                            <li>Lorem, ipsum dolor -----$50</li>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                            <li>Lorem, ipsum dolor -----$40</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="public/img/comida organica 2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Dieta Cetogénica</h2>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                            <li>Lorem, ipsum dolor -----$20</li>
+                            <li>Lorem, ipsum dolor -----$30</li>
+                            <li>Lorem, ipsum dolor -----$50</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="public/img/dieta cetogenica 2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>  
+        </section>
+
+        <section class="proveedores">
+            <h1>Nuestros proveedores de confianza</h1>
+            <div>
+                <h2>FROOTY</h2>
+                <div>
+                    <img src="public/img/proveedor1.jpg" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, adipisci.</p>
+                </div>
+            </div>  
+
+            <div>
+                <h2>Tomates OX</h2>
+                <div>
+                    <img src="public/img/proveedor2.jpg" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, adipisci.</p>
+                </div>
+            </div>  
+
+            <div>
+                <h2>Martín Villaverde</h2>
+                <div>
+                    <img src="public/img/proveedor3.jpg" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, adipisci.</p>
+                </div>
+            </div>  
+
+        </section>
+
+    </main>
+
+    <footer id="contactos">
+        <h1 class="texto-txt1">Contactanos</h1>
+    <section>
         <div>
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <a href="#">Visualiza nuestro menú</a>
-            </button>
+        <div>
+            <p class="texto txtp"><i class="fa-solid fa-envelope"></i>Healthy_Natural_meal@gmail.com</p>
+        </div>
+        <div>
+        <p class="texto txtp"><i class="fa-solid fa-mobile"></i>+505 7384 9376</p>
+        </div>
+        </div>
+    
+        <div>
+        <div>
+            <p class="texto txtp"><i class="fa-brands fa-facebook"></i>Healthy and Natural meal</p>
+        </div>
+        <div>
+        <p class="texto txtp"><i class="fa-solid fa-map-location-dot"></i>Lorem ipsum dolor sit, amet </p>
+        <p>consectetur adipisicing  elit. Temporibus, placeat!</p>
+        </div>
         </div>
         
-        <div class="card mb-3 col-lg-12" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="public/img/nutricionista.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-7 ">
-                    <div class="card-body ">
-                        <p class="card-text">M&aacute;s informaci&oacute;n con un nutricionista de confianza</p>
-                        <a href="#" class="btn btn-primary">Contacta aqu&iacute;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-
-    <section class="row">
-        <div class="card mb-3 col-lg-12" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-5">
-                <img src="public/img/almidon.jpg" class="img-fluid rounded-start" alt="">
-              </div>
-              <div class="col-md-7 ">
-                <div class="card-body ">
-                  <p class="card-text">Alimentos con almidón, incluidos el pan, las pastas, el arroz y las papas</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <div class="card mb-3 col-lg-12" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="public/img/FrutasYVerduras.png" class="img-fluid rounded-start" alt="">
-                </div>
-                <div class="col-md-7 ">
-                    <div class="card-body ">
-                    <p class="card-text">Frutas y verduras</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="card mb-3 col-lg-12" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="public/img/productos-lacteos.jpg" class="img-fluid rounded-start" alt="">
-                </div>
-                <div class="col-md-7 ">
-                    <div class="card-body ">
-                    <p class="card-text">Leche y otros productos lácteos</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="card mb-3 col-lg-12" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="public/img/carne-huevos-etc.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-7 ">
-                    <div class="card-body ">
-                    <p class="card-text">Carne, pescado, huevos, frijoles y otras fuentes no lácteas de proteínas</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="card mb-3 col-lg-12" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="public/img/azucar.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-7 ">
-                    <div class="card-body ">
-                    <p class="card-text">Contenido de grasa o azúcar</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-       
-
-    </section>
-
-    <section>
-            <div>
-                <h2>A la parrilla</h2>
-                <ul>
-                    <li>Lorem, ipsum dolor -----$20</li>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                    <li>Lorem, ipsum dolor -----$40</li>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                </ul>
-                <img src="" alt="">
-            </div>
-
-            <div>
-                <h2>Al horno</h2>
-                <ul>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                    <li>Lorem, ipsum dolor -----$40</li>
-                    <li>Lorem, ipsum dolor -----$20</li>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                </ul>
-                <img src="" alt="">
-            </div>
-
-            <div>
-                <h2>Ensaladas frescas</h2>
-                <ul>
-                    <li>Lorem, ipsum dolor -----$40</li>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                    <li>Lorem, ipsum dolor -----$20</li>
-                </ul>
-                <img src="" alt="">
-            </div>
-
-            <div>
-                <h2>Comida Orgánica</h2>
-                <ul>
-                    <li>Lorem, ipsum dolor -----$20</li>
-                    <li>Lorem, ipsum dolor -----$50</li>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                    <li>Lorem, ipsum dolor -----$40</li>
-                </ul>
-                <img src="" alt="">
-            </div>
-
-            <div>
-                <h2>Dieta Cetogénica</h2>
-                <ul>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                    <li>Lorem, ipsum dolor -----$20</li>
-                    <li>Lorem, ipsum dolor -----$30</li>
-                    <li>Lorem, ipsum dolor -----$50</li>
-                </ul>
-                <img src="" alt="">
-            </div>
         
-    </section>
-
-
-</main>
-
-
+    
+    </footer>
 
 </body>
 </html>

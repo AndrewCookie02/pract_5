@@ -1,0 +1,24 @@
+.navbar{
+    background-color: $myBgColorLight3;
+    @include margin (0px, 0px, 0px, 60px);
+    .nav-link{
+        &:hover{
+            background-color: $secundary;
+            border-radius: $borderrad;
+        }
+    }
+   
+}  
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include margin (0px, 0px, 0px, 50px);
+    .card{
+        @include margin (0px, 0px, 0px, 50px);
+        &:hover{
+            background-color: $myBgColorLight;
+        }
+    }
+}

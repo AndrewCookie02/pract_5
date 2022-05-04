@@ -1,0 +1,25 @@
+.carruselmenu{
+    @include margin (0px, 0px, 0px, 50px);
+}
+
+.nutricion{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.nutricion > div:nth-child(1){
+    @include margin (0%, 1%, 0px, 0px);
+}
+
+.buenasalud{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .card>div{
+        display: flex;
+        align-items: center;
+        &:hover{
+            background-color: $myBgColorLight2;
+        }
+    }
+}
