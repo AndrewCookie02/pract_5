@@ -4,9 +4,9 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -12113,6 +12113,10 @@ header .card:hover {
   -ms-grid-rows: 16% 84%;
       grid-template-rows: 16% 84%;
   justify-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .menu > section h2, .menu > section .h2 {
@@ -12162,8 +12166,8 @@ header .card:hover {
   width: 50%;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 20% 80%;
-      grid-template-rows: 20% 80%;
+  -ms-grid-rows: 18% 82%;
+      grid-template-rows: 18% 82%;
   justify-items: center;
   border: solid #190f70;
   background-color: #8cf0ad;
@@ -12174,6 +12178,10 @@ header .card:hover {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: h2;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .proveedores > div figure {
@@ -12183,7 +12191,7 @@ header .card:hover {
 }
 
 .proveedores > div figure img {
-  width: 95%;
+  width: 80%;
 }
 
 .proveedores > div div {
@@ -12232,6 +12240,30 @@ footer section div:nth-child(2) {
   grid-area: secc2;
 }
 
+/******************************************/
+.texto-txt1 {
+  font-size: 40px;
+  font-family: "Koulen", cursive;
+  color: #1e1e9b;
+}
+
+.texto-txt2 {
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #530418;
+}
+
+.texto-txtp {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  color: #190f70;
+}
+
+/* class="texto-txt1"
+     class="texto-txt2"
+      class="texto-txtp"
+
+*/
 @media all and (max-width: 660px) {
   .menu > section {
     display: -ms-grid;
@@ -12271,7 +12303,7 @@ footer section div:nth-child(2) {
     width: 80%;
     padding-left: 60px;
     padding-right: 0px;
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 0px;
   }
 }
@@ -12288,8 +12320,8 @@ footer section div:nth-child(2) {
     width: 60%;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 15% 65% 20%;
-        grid-template-rows: 15% 65% 20%;
+    -ms-grid-rows: 15% 60% 25%;
+        grid-template-rows: 15% 60% 25%;
     justify-items: center;
     border: solid #190f70;
     background-color: #8cf0ad;

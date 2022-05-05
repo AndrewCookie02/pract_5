@@ -11,20 +11,21 @@
                         "img p" ;
     width: 50%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 18% 82%;
     justify-items: center;
     border: solid $dark;
     background-color: $myBgColorLight;
 
     h2{
         grid-area: h2;
+        @include paddings (0px, 0px,10px, 0px);
         
     }
     figure{
         grid-area: img;
        
         img{
-            width: 95%;
+            width: 80%;
         }
     }
     div{

@@ -23,7 +23,7 @@
             grid-area: img;
             img{
                 width:80%;
-                @include paddings (60px, 0px,0px, 0px);
+                @include paddings (60px, 0px,10px, 0px);
             }
         }
     }
@@ -40,7 +40,7 @@
                              "p p" ;
         width: 60%;
         grid-template-columns: 100%;
-        grid-template-rows: 15% 65% 20%;
+        grid-template-rows: 15% 60% 25%;
         justify-items: center;
         border: solid $dark;
         background-color: $myBgColorLight;
